@@ -1,14 +1,10 @@
 import {Map, fromJS} from 'immutable';
 import {loop, combineReducers} from 'redux-loop';
 import NavigationStateReducer from '../modules/navigation/NavigationState';
-import AuthStateReducer from '../modules/auth/AuthState';
 import CityStateReducer from '../modules/city/CityState';
 import SessionStateReducer, {RESET_STATE} from '../modules/session/SessionState';
 
 const reducers = {
-  // Authentication/login state
-  auth: AuthStateReducer,
-
   // City app state
   city: CityStateReducer,
 

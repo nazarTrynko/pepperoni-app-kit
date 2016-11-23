@@ -3,7 +3,8 @@ import {
   Text,
   View,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  Platform
 } from 'react-native';
 import * as theme from '../utils/theme';
 
@@ -15,12 +16,14 @@ export default React.createClass({
     action: PropTypes.func.isRequired
   },
   render() {
+    const Label = ({value}) => {
+      const labelValue = Platform.OS === 'android' ? value.toUpperCase() : value;
+      return <Text style={theme.fonts.button}>{labelValue}</Text>;
+    };
+
     return (
-      <TouchableOpacity
-        onPress={this.props.action}
-        style={[styles.button, this.props.style]}
-        >
-        <Text style={theme.fonts.button}>{this.props.text}</Text>
+      <TouchableOpacity onPress={this.props.action} style={[styles.button, this.props.style]}>
+        <Label value={this.props.text} />
       </TouchableOpacity>
     );
   }
@@ -36,6 +39,6 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   selected: {
-    backgroundColor: '#39babd'
+    backgroundColor: theme.selectedBullet
   }
 });

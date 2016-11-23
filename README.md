@@ -2,7 +2,7 @@
 Futurice React Native Starter Kit
 ===
 [![Build Status](https://travis-ci.org/futurice/pepperoni-app-kit.svg?branch=master)](https://travis-ci.org/futurice/pepperoni-app-kit)
-[![React Native](https://img.shields.io/badge/react%20native-0.35.0-brightgreen.svg)](https://github.com/facebook/react-native)
+[![React Native](https://img.shields.io/badge/react%20native-0.40.0-brightgreen.svg)](https://github.com/facebook/react-native)
 [![Sponsored](https://img.shields.io/badge/chilicorn-sponsored-brightgreen.svg)](http://spiceprogram.org/oss-sponsorship/)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/futurice/pepperoni-app-kit/blob/master/LICENSE)
 
@@ -13,6 +13,19 @@ Getting started on a new app just takes too damn long, though. Most apps need th
 This Starter Kit reflects the best practices of React Native development we have discovered while building real-world applications for our customers. It is opinionated about tooling, patterns and development practices. It might not be a one-size-fits-all solution for everyone, but feel free to customize it for your needs, or just take inspiration from it.
 
 React Native Starter Kit is a part of [Pepperoni](http://getpepperoni.com), a framework for kickstarting digital product development.
+
+## tltr;
+
+Sounds good and you just want to see how it works? Here is a quick start guide:
+
+```
+git clone git@github.com:futurice/pepperoni-app-kit.git
+cd pepperoni-app-kit
+yarn install
+react-native run-ios
+```
+
+For further setup instructions please see our [Getting Started](#getting-started) section.
 
 ## Contents
 
@@ -46,11 +59,11 @@ Not all of the below is yet fully implemented
 * [Auth0](https://auth0.com/) for ready-to-use login and signup screens, user authentication and identity management
 * [Bitrise.io](https://www.bitrise.io) configurations for Continuous Integration and beta app distribution
 * :warning: [Google Tag Manager](https://www.google.com/analytics/tag-manager/) analytics
-* :star: [Microsoft Code Push](http://microsoft.github.io/code-push) for Continuous Deployment and instant app updates
 
 
 ### Roadmap
 
+* **TODO** :star: [Microsoft Code Push](http://microsoft.github.io/code-push) for instant JavaScript and images update
 * **TODO** Crash reporting
 * **TODO** Android and iOS UI Testing with Calaba.sh?
 * **TODO** Feature flags?

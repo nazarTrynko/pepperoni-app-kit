@@ -4,6 +4,8 @@ import CityView from './CityView';
 export default connect(
   state => ({
     office: state.getIn(['city', 'value']),
-    loading: state.getIn(['city', 'loading'])
+    loading: state.getIn(['city', 'loading']),
+    place: state.getIn(['city', 'place']),
+    position: state.getIn(['city', 'position'])
   })
 )(CityView);
